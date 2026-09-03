@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lns-arithmetic"
+version = "0.1.0"
+description = "Logarithmic Number System (LNS16 / LNS8) arithmetic library for DNN computation experiments"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Tejas" }]
+dependencies = [
+    "numpy>=1.20"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[tool.setuptools.packages.find]
+include = ["lns_arithmetic*"]
